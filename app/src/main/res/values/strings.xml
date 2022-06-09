@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ping Pong Scoreboard</string>
+    <string name="title_text">Ping Pong \n Scoreboard</string>
+    <string name="settings">Settings</string>
+    <string name="new_game">New game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="continue_text">Continue</string>
+</resources>

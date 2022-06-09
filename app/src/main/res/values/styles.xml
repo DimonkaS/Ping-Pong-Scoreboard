@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_style"
+        background_tint="@color/"/>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">122dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:backgroundTint">#B4DD2929</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/redBg</item>
+        <item name="android:navigationBarColor">@color/redBg</item>
+    </style>
+</resources>
