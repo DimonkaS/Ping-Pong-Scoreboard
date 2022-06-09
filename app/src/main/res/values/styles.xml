@@ -8,7 +8,7 @@
         <item name="android:layout_height">54dp</item>
         <item name="android:backgroundTint">#B4DD2929</item>
         <item name="android:fontFamily">sans-serif-black</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
     <style name="Theme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimaryDark">@color/redBg</item>

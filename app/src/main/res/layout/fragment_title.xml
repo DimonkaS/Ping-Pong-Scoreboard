@@ -18,7 +18,6 @@
             android:layout_marginTop="28dp"
             android:src="@drawable/ping_pong_download_png"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,12 +37,12 @@
         <Button
             android:id="@+id/settings_button"
             style="@style/buttonStyle"
-            android:layout_width="122dp"
-            android:layout_height="54dp"
+            android:layout_width="176dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_corner"
             android:backgroundTint="#C81E4C8F"
             android:text="@string/settings"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/new_game_button" />
@@ -51,27 +50,16 @@
         <Button
             android:id="@+id/new_game_button"
             style="@style/buttonStyle"
+            android:layout_width="176dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/rounded_corner"
             android:text="@string/new_game"
-            android:textSize="15sp"
             app:layout_constraintBottom_toTopOf="@+id/settings_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintVertical_chainStyle="spread_inside" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="544dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="679dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
