@@ -11,17 +11,9 @@
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_settingsFragment2"
-            app:destination="@id/settingsFragment2" />
-        <action
             android:id="@+id/action_titleFragment_to_initializationFragment"
             app:destination="@id/initializationFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/settingsFragment2"
-        android:name="com.example.pingpongscoreboard.settingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/initializationFragment"
         android:name="com.example.pingpongscoreboard.initializationFragment"

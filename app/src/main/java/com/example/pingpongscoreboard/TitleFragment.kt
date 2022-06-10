@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Spinner
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
@@ -39,11 +40,8 @@ class TitleFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,R.layout.fragment_title,container,false)
-        binding.settingsButton.setOnClickListener {
-            view: View -> view.findNavController().navigate(R.id.action_titleFragment_to_settingsFragment2)
-        }
-        binding.newGameButton.setOnClickListener {
-            view: View -> view.findNavController().navigate(R.id.action_titleFragment_to_initializationFragment)
+        binding.newGameButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_initializationFragment)
         }
         return binding.root
     }

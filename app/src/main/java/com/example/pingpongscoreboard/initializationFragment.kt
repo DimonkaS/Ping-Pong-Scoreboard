@@ -1,14 +1,16 @@
 package com.example.pingpongscoreboard
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.pingpongscoreboard.databinding.FragmentInitializationBinding
-import com.example.pingpongscoreboard.databinding.FragmentSettingsBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,6 +41,21 @@ class initializationFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentInitializationBinding>(inflater,R.layout.fragment_initialization,container,false)
+        val spinner: Spinner = binding.setsSpinner
+        context?.let  {
+        ArrayAdapter.createFromResource(it, R.array.sets_array,R.layout.spinner_item).also { adapter ->
+            adapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
+            spinner.adapter = adapter
+            }
+        }
+        val playerSpinner: Spinner = binding.playerSpinner
+        context?.let  {
+            ArrayAdapter.createFromResource(it, R.array.players,R.layout.spinner_item).also { adapter ->
+                adapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
+                playerSpinner.adapter = adapter
+            }
+        }
+
         binding.continueButton.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_initializationFragment_to_gameFragment2)}
         return binding.root
     }

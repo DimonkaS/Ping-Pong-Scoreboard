@@ -7,4 +7,21 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="save">Save</string>
     <string name="continue_text">Continue</string>
+    <string name="player_one">Player 1</string>
+    <string name="player_two">Player 2</string>
+    <string name="sets">Sets</string>
+    <string name="set_points">Set points</string>
+    <string name="first_to_serve">First to serve</string>
+    <string name="name">Name</string>
+    <string-array name="sets_array">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="players">
+        <item>@string/player_one</item>
+        <item>@string/player_two</item>
+    </string-array>
 </resources>

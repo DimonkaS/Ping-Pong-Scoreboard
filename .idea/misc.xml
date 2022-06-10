@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/spinner_dropdown.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/spinner_sla.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/spinner_text.xml" value="0.1675" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.302536231884058" />
         <entry key="app/src/main/res/layout/fragment_game.xml" value="0.302536231884058" />
-        <entry key="app/src/main/res/layout/fragment_initialization.xml" value="0.2740487387772552" />
+        <entry key="app/src/main/res/layout/fragment_initialization.xml" value="0.1308251389482685" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_title.xml" value="0.13503971756398941" />
+        <entry key="app/src/main/res/layout/fragment_title.xml" value="0.1308251389482685" />
+        <entry key="app/src/main/res/layout/spinner_dropdown_item.xml" value="0.12997007268063274" />
+        <entry key="app/src/main/res/layout/spinner_item.xml" value="0.12997007268063274" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1685" />
       </map>
     </option>
