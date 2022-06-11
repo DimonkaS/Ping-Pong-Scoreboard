@@ -1,11 +1,13 @@
 package com.example.pingpongscoreboard
 
+import android.app.Activity
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.databinding.DataBindingUtil
@@ -55,8 +57,15 @@ class initializationFragment : Fragment() {
                 playerSpinner.adapter = adapter
             }
         }
-
-        binding.continueButton.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_initializationFragment_to_gameFragment2)}
+        binding.continueButton.setOnClickListener { view: View ->
+            val servesPP = binding.editTextServesPerPlayer.text.toString()
+            val playerName1 = binding.editTextTextPersonName.text.toString()
+            val playerName2 = binding.editTextTextPersonName2.text.toString()
+            val setPoints : String? = binding.editTextSetPoints.text.toString()
+            val sets : String? = spinner.selectedItem.toString()
+            val firstServe : String? = playerSpinner.selectedItem.toString()
+            val directions = initializationFragmentDirections.actionInitializationFragmentToGameFragment2(playerName1,playerName2,setPoints,sets,firstServe,servesPP)
+            view.findNavController().navigate(directions)}
         return binding.root
     }
 

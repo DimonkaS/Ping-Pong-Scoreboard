@@ -74,33 +74,35 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="208dp"
             android:layout_height="46dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="70dp"
             android:ems="10"
             android:fontFamily="casual"
             android:hint="@string/name"
             android:inputType="textPersonName"
-            android:maxLength="20"
+            android:maxLength="12"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.832"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="208dp"
             android:layout_height="47dp"
+            android:layout_marginStart="17dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="casual"
             android:hint="@string/name"
             android:inputType="textPersonName"
-            android:maxLength="20"
+            android:maxLength="12"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.832"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
         <Spinner
@@ -108,6 +110,7 @@
             style="@style/Widget.AppCompat.Spinner"
             android:layout_width="50dp"
             android:layout_height="38dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/spinner_background"
             android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
@@ -115,14 +118,15 @@
             android:popupElevation="3dp"
             android:stateListAnimator="@drawable/spinner_sla"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.296"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <Spinner
             android:id="@+id/player_spinner"
             android:layout_width="138dp"
             android:layout_height="45dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/spinner_background"
             android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
@@ -130,25 +134,43 @@
             android:popupElevation="3dp"
             android:stateListAnimator="@drawable/spinner_sla"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/editTextSetPoints"
             android:layout_width="58dp"
             android:layout_height="47dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="casual"
-            android:textStyle="bold"
             android:hint="11"
             android:inputType="number"
             android:maxLength="2"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/editTextServesPerPlayer"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="2"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <Button
             android:id="@+id/continue_button"
@@ -162,6 +184,18 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textStyleInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/server_per_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

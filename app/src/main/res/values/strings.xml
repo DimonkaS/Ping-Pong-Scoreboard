@@ -13,6 +13,7 @@
     <string name="set_points">Set points</string>
     <string name="first_to_serve">First to serve</string>
     <string name="name">Name</string>
+    <string name="server_per_player">Serves per player</string>
     <string-array name="sets_array">
         <item>1</item>
         <item>3</item>

@@ -6,7 +6,7 @@
     <style name="buttonStyle">
         <item name="android:layout_width">122dp</item>
         <item name="android:layout_height">54dp</item>
-        <item name="android:backgroundTint">#B4DD2929</item>
+        <item name="android:backgroundTint">@color/darkRed</item>
         <item name="android:fontFamily">sans-serif-black</item>
         <item name="android:textSize">20sp</item>
     </style>
@@ -22,6 +22,33 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">30sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="playerTextNormal">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/textStyleInit</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="playerTextServer">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/textStyleInit</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/darkRed</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">casual</item>
         <item name="android:typeface">normal</item>
     </style>
 </resources>

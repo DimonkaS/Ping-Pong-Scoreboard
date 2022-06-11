@@ -10,4 +10,6 @@
     <color name="redBg">#F1A5A5</color>
     <color name="yellow1">#FFC107</color>
     <color name="teal">#C2FFFA</color>
+    <color name="darkRed">#B4DD2929</color>
+    <color name="darkBlue">#152BEB</color>
 </resources>

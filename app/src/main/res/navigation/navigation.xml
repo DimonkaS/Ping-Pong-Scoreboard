@@ -21,12 +21,39 @@
         tools:layout="@layout/fragment_initialization" >
         <action
             android:id="@+id/action_initializationFragment_to_gameFragment2"
-            app:destination="@id/gameFragment2"
-            app:popUpTo="@id/titleFragment" />
+            app:destination="@id/gameFragment2" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment2"
         android:name="com.example.pingpongscoreboard.gameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <argument
+            android:name="playerName1"
+            app:argType="string"
+            android:defaultValue="Player 1" />
+        <argument
+            android:name="playerName2"
+            app:argType="string"
+            android:defaultValue="Player 1" />
+        <argument
+            android:name="setPoints"
+            app:argType="string"
+            android:defaultValue="11"
+            app:nullable="true" />
+        <argument
+            android:name="sets"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="5" />
+        <argument
+            android:name="firstServe"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Player 1" />
+        <argument
+            android:name="servesPP"
+            app:argType="string"
+            android:defaultValue="2" />
+    </fragment>
 </navigation>
