@@ -4,227 +4,274 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".gameFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@android:color/darker_gray">
 
-        <ImageView
-            android:id="@+id/plusPoint2"
-            android:layout_width="108dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/plus"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/view3"
-            app:layout_constraintTop_toBottomOf="@+id/view4" />
+            android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/textViewPlayerName1"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:textAppearance="@style/playerTextNormal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/setsTextView"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintVertical_chainStyle="spread_inside"
-            tools:text="@string/player_one" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:text="red"
+                >
 
-        <TextView
-            android:id="@+id/textViewPlayerName2"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:textAppearance="@style/playerTextNormal"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintStart_toEndOf="@+id/setsTextView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:text="@string/player_two" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="10"
+                    >
+                    <TextView
+                        android:id="@+id/textViewPlayerName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/playerTextNormal"
+                        tools:text="@string/player_one" />
 
-        <TextView
-            android:id="@+id/setsTextView"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:text="@string/sets" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="60"
+                    android:gravity="center">
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="215dp"
-            android:layout_height="215dp"
-            android:background="@color/darkRed"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view2"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textPoint1"
+                        style="@style/textStyleInit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="100sp"
+                        android:gravity="center"
+                        tools:text="10"
+                        android:layout_margin="10dp"
+                        android:background="@color/darkRed"/>
 
-        <View
-            android:id="@+id/view4"
-            android:layout_width="215dp"
-            android:layout_height="215dp"
-            android:background="@color/darkBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/view3"
-            app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="30"
+                    android:gravity="center">
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="95dp"
-            android:layout_height="102dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="110dp"
-            android:background="@color/darkRed"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view3"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/view"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="green"
+                        android:gravity="center">
 
-        <View
-            android:id="@+id/view3"
-            android:layout_width="95dp"
-            android:layout_height="102dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="110dp"
-            android:background="@color/darkBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view4"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/view2"
-            app:layout_constraintTop_toTopOf="parent" />
+                        <ImageView
+                            android:id="@+id/plusPoint1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_weight="50"
+                            android:padding="20dp"/>
 
-        <ImageView
-            android:id="@+id/minusPoint1"
-            android:layout_width="108dp"
-            android:layout_height="0dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/minus"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view2"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintVertical_bias="0.0" />
+                        <ImageView
+                            android:id="@+id/minusPoint1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/minus"
+                            android:layout_weight="50"
+                            android:padding="20dp"/>
 
-        <ImageView
-            android:id="@+id/minusPoint2"
-            android:layout_width="108dp"
-            android:layout_height="0dp"
-            android:src="@drawable/minus"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/plusPoint2"
-            app:layout_constraintTop_toBottomOf="@+id/view4" />
 
-        <ImageView
-            android:id="@+id/plusPoint1"
-            android:layout_width="108dp"
-            android:layout_height="0dp"
-            android:src="@drawable/plus"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/minusPoint1"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/textPoint1"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="100sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view"
-            tools:text="10" />
+                    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textPoint2"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="100sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
-            app:layout_constraintEnd_toEndOf="@+id/view4"
-            app:layout_constraintStart_toStartOf="@+id/view4"
-            app:layout_constraintTop_toTopOf="@+id/view4"
-            tools:text="10" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/setPoint1"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="60sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view2"
-            app:layout_constraintEnd_toEndOf="@+id/view2"
-            app:layout_constraintStart_toStartOf="@+id/view2"
-            app:layout_constraintTop_toTopOf="@+id/view2"
-            tools:text="10" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/setPoint2"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="60sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
-            app:layout_constraintEnd_toEndOf="@+id/view3"
-            app:layout_constraintStart_toStartOf="@+id/view3"
-            app:layout_constraintTop_toTopOf="@+id/view3"
-            tools:text="10" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:text="red"
+                >
 
-        <ImageView
-            android:id="@+id/imageRestart"
-            android:layout_width="84dp"
-            android:layout_height="78dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/restart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/plusPoint2"
-            app:layout_constraintStart_toEndOf="@+id/minusPoint1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="10">
+                    <TextView
+                        android:id="@+id/setsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/playerTextNormal"
+                        tools:text="@string/sets" />
 
-        <TextView
-            android:id="@+id/textWinner"
-            style="@style/textStyleInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="19dp"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/view4"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/view"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.693"
-            tools:text="Player 1 \n is the winner" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="30"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="green"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/setPoint1"
+                            style="@style/textStyleInit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="50dp"
+                            android:gravity="center"
+                            tools:text="10"
+                            android:layout_weight="50"
+                            android:layout_margin="10dp"
+                            android:background="@color/darkRed"/>
+
+                        <TextView
+                            android:id="@+id/setPoint2"
+                            style="@style/textStyleInit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="50dp"
+                            android:gravity="center"
+                            tools:text="10"
+                            android:layout_weight="50"
+                            android:layout_margin="10dp"
+                            android:background="@color/darkBlue"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="30">
+                    <TextView
+                        android:id="@+id/textWinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/playerTextNormal"
+                        tools:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="30"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageRestart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/restart"
+                        android:padding="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:text="red"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="10">
+                    <TextView
+                        android:id="@+id/textViewPlayerName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/playerTextNormal"
+                        tools:text="@string/player_two" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="60"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textPoint2"
+                        style="@style/textStyleInit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="100sp"
+                        android:gravity="center"
+                        tools:text="10"
+                        android:layout_margin="10dp"
+                        android:background="@color/darkBlue"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="green"
+                    android:layout_weight="30"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="green"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/plusPoint2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_weight="50"
+                            android:padding="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/minusPoint2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/minus"
+                            android:layout_weight="50"
+                            android:padding="20dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </layout>

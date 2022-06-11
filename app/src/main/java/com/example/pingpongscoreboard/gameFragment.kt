@@ -179,20 +179,7 @@ class gameFragment : Fragment() {
             playerOneSets = 0
             playerTwoSets = 0
             serveCounter = 0
-            if (isPlayerOnePrio) {
-                Log.i("Switch", "player 2")
-                binding.textViewPlayerName1.setTextAppearance(R.style.playerTextNormal)
-                binding.textViewPlayerName2.setTextAppearance(R.style.playerTextServer)
-            }
-            if (!isPlayerOnePrio){
-                Log.i("Switch", "player 1")
-                binding.textViewPlayerName2.setTextAppearance(R.style.playerTextNormal)
-                binding.textViewPlayerName1.setTextAppearance(R.style.playerTextServer)
-            }
-            when (isPlayerOnePrio) {
-                true -> isPlayerOnePrio = false
-                false -> isPlayerOnePrio = true
-            }
+            swap()
             if (args.servesPP == "" || args.servesPP == "0") servesPerPlayer = 2 else servesPerPlayer = args.servesPP.toInt()
             binding.setsTextView.setText("Set " + currentSet)
             binding.setPoint1.setText(playerOneSets.toString())
